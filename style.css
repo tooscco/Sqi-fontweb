@@ -13,7 +13,7 @@ a {
 .grid {
     background-color: #ffffff;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .grid-item {
@@ -22,31 +22,32 @@ a {
     box-shadow: 1px 1px #e8e7df;
 }
 
-.grid-item ol img {
+.bar01  li img{
     width: 20px;
-    position: absolute;
-    left: 455px;
-    top: 30px;
+   position: relative;
+   top: -18px;
+   right: 90px;
 }
 
-.bar02 img {
+.bar02  li img{
     width: 20px;
-    position: absolute;
-    left: 555px;
-    top: 30px;
-    border: 2px solid blueviolet;
+   position: relative;
+   top: -18px;
+   right: 49px;
 }
 
-ol li {
-    padding: 0px 30px 30px 0px;
+.bar04 li img {
+    width: 20px;
+    position: relative;
+    top: -18px;
+    right: 75px;
 }
 
 .grid-item ol {
-    width: 75%;
     display: flex;
-    gap: 10px;
-    margin: 20px 0px 0px 320px;
-    padding: 10px 10px 0px 10px;
+    gap: 15px;
+    margin: 30px 0px 0px 335px;
+    height: 50px;
 }
 
 .bar li {
@@ -59,17 +60,44 @@ ol li {
 }
 
 
-.grid-item-ol li {
+.bar02, .bar03, .bar05, .bar06{
+    width:110px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d409b !important;
+    list-style: none;
+    padding: 0px 0px 1px 0px;
+}
+
+.bar01, .bar04 {
+    width:70px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d409b !important;
+    list-style: none;
+    padding: 0px 0px 5px 0px;
+}
+
+.grid-item-ol ul {
     font-size: 14px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     color: #2d409b;
     list-style: none;
-    border: 2px solid green;
 }
 
 .bar {
     display: none;
+}
+
+.grid-item-ol ol li:hover{
+    color: #3e5bbc;
+}
+
+.bar ul li:hover{
+    color: rgb(78, 75, 75);
 }
 
 .grid-item-ol ol :hover .bar {
@@ -77,13 +105,13 @@ ol li {
     opacity: 0.7;
     margin-top: 20px;
     position: absolute;
-    top: 60px;
-    border-top: 2px solid brown;
+    top: 58px;
+    border-top: 3px solid #00208a;
     padding: 30px;
     background-color: #ffffff;
     z-index: 4;
-    width: 230px;
-    color: black;
+    width: 220px;
+    color: #000000;
 }
 
 .grid-item img {
@@ -139,6 +167,21 @@ ol li {
     border-radius: 15px;
     background-color: #00208a;
     color: #ffffff;
+    position: absolute;
+    height: 58px;
+}
+
+.first-section-div-div a:hover .first-div-bar{
+    display: block;
+}
+
+.first-div-bar {
+    width: 30px;
+    animation: arrowout 0.3s linear forwards;
+    position: relative;
+    top: -20px;
+    left: 23px;
+    display: none;
 }
 
 .first-section-div-sec-div {
@@ -474,18 +517,33 @@ ol li {
 }
 
 .five-div-sec-div a {
-    padding: 18px;
+    padding: 18px 27px 18px 25px;
     border-radius: 30px;
     background-color: #00208a;
     color: #ffffff;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    position: absolute;
+    height: 50px;
+}
+
+.five-div-sec-div a:hover .five-div-bar{
+    display: block;
+}
+
+.five-div-bar {
+    width: 30px;
+    animation: arrowout 0.3s linear forwards;
+    position: relative;
+    top: -20px;
+    left: 25px;
+    display: none;
 }
 
 .five-div-fir-div iframe {
     background-color: #ffffff;
-    height: 200px;
+    height: 170px;
     border-radius: 30px;
 }
 
@@ -533,7 +591,7 @@ ol li {
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
-    padding: 5px;
+    padding: 5px 0px 0px 0px;
 }
 
 .six-div-sec-div03 span {
@@ -542,9 +600,9 @@ ol li {
     font-family: Arial, Helvetica, sans-serif;
     color: #FB8E28;
     display: block;
-    position: absolute;
-    top: 4912px;
-    left: 264px;
+    position: relative;
+    bottom: -11px;
+    right: 85px;
 }
 
 .six-div-sec-div03 {
@@ -553,7 +611,8 @@ ol li {
 
 .six-div-sec-div03 img {
     width: 23px;
-    margin: 7px 0px 0px 0px;
+    position: relative;
+    top: -14px;
 }
 
 .six-div-sec-div04 {
@@ -561,7 +620,7 @@ ol li {
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     color: #555555;
-    margin: 7px 0px;
+    margin: 0px 0px 7px 0px;
 }
 
 .six-div-sec-div004 {
@@ -593,6 +652,20 @@ ol li {
     border-radius: 20px;
     padding: 4px;
     background-color: #0a6cff;
+    color: #ffffff;
+}
+
+.six-div-sec-div06  a{
+    color: #ffffff;
+    position: relative;
+    top: -5px;
+}
+
+.six-div-sec-div06  img{
+    position: relative;
+    bottom: -6px;
+    border-radius: 100%;
+    background: #ffffff;
 }
 
 .six-div-sec-div01 img {
@@ -769,8 +842,11 @@ ol li {
 }
 
 .eight-div-bar img {
-    transform: translate(100px, -30px);
     width: 35px;
+    animation: arrowout 0.3s linear forwards;
+    position: relative;
+    top: -28px;
+    left: 50px;
 }
 
 .eight-div-sec,
@@ -1199,4 +1275,94 @@ ol li {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     margin-left: 60px;
+}
+
+.thirteen-div{
+    position: sticky;
+   bottom: 40px;
+   height: 62px;
+}
+
+.thirteen-div-div{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+   margin: 0px 0px 0px 40px;
+   border-radius: 100%;
+   transform: translate(0px, 10px);
+   background-color:  #2db742;
+   position: sticky;
+   bottom: 40px;
+}
+
+.thirteen-div img{
+    width: 35px;
+    transform: translate(0px, 10px);
+}
+
+.thirteen-div-sec{
+    position: relative;
+    top: -26px;
+    left: 110px;
+    width: 150px;
+    background-color: #f5f7f9;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.thirteen-div-sec p{
+    color: #43474E;
+}
+
+.fourteen-div{
+    display: block;
+    background: #3a579a;
+    transform: translate(0px, -150px);
+    position: sticky;
+    bottom: 100px;
+    width: 35px;
+    padding: 0px 0px 0.3px 0px;
+}
+
+.fourteen-div img{
+    width: 25px;
+    transform: translate(10px);
+}
+
+.fourteen-div-fir:hover{
+    background: #274386;
+    transform: scale(0.7, 1.0);
+    transition: 0.5s;
+}
+.fourteen-div-fir{
+    background: #3a579a;
+    padding: 5px 0px 3.3px 0px;
+    width: 46.5px;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.fourteen-div-sec{
+    background: #14b8f9;
+    padding: 5px 0px 3px 0px;
+    width: 46.5px;
+}
+
+.fourteen-div-sec:hover{
+    background: #0ba0da;
+    transform: scale(0.7, 1.0);
+    transition: 0.5s;
+}
+
+.fourteen-div-thir{
+    background: #2290cf;
+    padding: 5px 0px 3px 0px;
+    width: 46.5px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.fourteen-div-thir:hover{
+    background: #066ba5;
+    transform: scale(0.7, 1.0);
+    transition: 0.5s;
 }
